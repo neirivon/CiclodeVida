@@ -1,0 +1,324 @@
+NEIRIVON ELIAS CARDOSO
+Logs do aplicativo do exercício Ciclo de Vida
+
+1)Primeira execução
+LOGS:
+	08-30 21:36:02.440 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onCreate() chamado: null
+	08-30 21:36:02.442 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onStart() chamado.
+	08-30 21:36:02.442 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onResume() chamado.
+
+2) Depois de clicar no botão voltar
+LOGS: 
+	08-30 21:37:09.886 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onPause() chamado.
+	08-30 21:37:09.947 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onStop() chamado.
+	08-30 21:37:09.947 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onDestroy() chamado.
+
+3) Volte a tela inicial do emulador e entre de novo na aplicação. Os métodos onCreate(), onStart() e onResume() serão chamados novamente. 
+Então clique no botão home para voltar a tela inicial
+LOGS:
+	08-30 21:38:49.360 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onCreate() chamado: null
+	08-30 21:38:49.360 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onStart() chamado.
+	08-30 21:38:49.360 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onResume() chamado.
+	08-30 21:40:07.942 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onPause() chamado.
+	08-30 21:40:07.952 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onSaveInstanceState() chamado.
+	08-30 21:40:07.952 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onStop() chamado.
+
+4) Rotacione o celular
+LOGS:
+	08-30 21:43:11.943 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onPause() chamado.
+	08-30 21:43:11.943 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onSaveInstanceState() chamado.
+	08-30 21:43:11.943 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onStop() chamado.
+	08-30 21:43:11.943 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onDestroy() chamado.
+	08-30 21:43:12.122 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onCreate() chamado: Bundle			[{android:viewHierarchyState=Bundle[{android:views={16908290=android.view.AbsSavedState$1@3f77ede}}]}]
+	08-30 21:43:12.122 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onStart() chamado.
+	08-30 21:43:12.122 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onResume() chamado.
+	08-30 21:43:15.412 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onPause() chamado.
+	08-30 21:43:15.412 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onSaveInstanceState() chamado.
+	08-30 21:43:15.412 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onStop() chamado.
+	08-30 21:43:15.412 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onDestroy() chamado.
+	08-30 21:43:15.540 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onCreate() chamado: Bundle[{android:viewHierarchyState=Bundle[{android:views={16908290=android.view.AbsSavedState$1@3f77ede}}]}]
+	08-30 21:43:15.542 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onStart() chamado.
+	08-30 21:43:15.542 3669-3669/neirivon.com.br.ciclodevida I/livro: .MainActivity.onResume() chamado.
+
+5) Navega entre telas
+LOGS:
+	08-30 22:12:39.036 24489-24489/neirivon.com.br.ciclodevida I/livro: .MainActivity.onPause() chamado.
+	08-30 22:12:41.540 24489-24489/neirivon.com.br.ciclodevida I/livro: .MainActivity.onSaveInstanceState() chamado.
+	08-30 22:12:41.540 24489-24489/neirivon.com.br.ciclodevida I/livro: .MainActivity.onStop() chamado.
+
+6) Atende uma chamada
+LOGS:
+	08-30 22:21:40.428: D/ConnectivityService(1640): NetworkAgentInfo [MOBILE (LTE) - 100] EVENT_NETWORK_INFO_CHANGED, going from CONNECTED to SUSPENDED
+08-30 22:21:40.428: D/ConnectivityService(1640): notifyType UNKNOWN for NetworkAgentInfo [MOBILE (LTE) - 100]
+08-30 22:21:40.429: D/CSLegacyTypeTracker(1640): Sending SUSPENDED broadcast for type 0 NetworkAgentInfo [MOBILE (LTE) - 100] isDefaultNetwork=true
+08-30 22:21:40.430: D/ConnectivityService(1640): sendStickyBroadcast: action=android.net.conn.CONNECTIVITY_CHANGE
+08-30 22:21:40.430: D/ConnectivityManager.CallbackHandler(1773): CM callback handler got msg 524299
+08-30 22:21:40.432: D/Tethering(1640): MasterInitialState.processMessage what=3
+08-30 22:21:40.439: D/ConnectivityManager.CallbackHandler(2433): CM callback handler got msg 524299
+08-30 22:21:40.440: I/Telecom(1640): : Adding new incoming call with phoneAccountHandle ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [e2f7d48dd2b5ca523e7313cf4ba0f6ea830b6281], UserHandle{0}
+08-30 22:21:40.444: D/NetworkChangeNotifierAutoDetect(2180): Network connectivity changed, type is: 6
+08-30 22:21:40.446: I/Telecom(1640): PhoneAccountRegistrar: SimCallManager queried, returning: null
+08-30 22:21:40.448: I/Telecom(1640): TelecomSystem: CallerInfoAsyncQuery.startQuery number=[23a81074c99ea011e7c5701d183119bf3d815f85] cookie=[225311393, NEW, null, tel:***********, A, childs(0), has_parent(false), [[Capabilities:]]]
+08-30 22:21:40.450: I/Telecom(1640): Event: Call 3: CREATED, null
+08-30 22:21:40.457: I/Telecom(1640): PhoneAccountRegistrar: SimCallManager queried, returning: null
+08-30 22:21:40.464: I/Telecom(1640): CreateConnectionProcessor: Trying attempt CallAttemptRecord(ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [e2f7d48dd2b5ca523e7313cf4ba0f6ea830b6281], UserHandle{0},ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [e2f7d48dd2b5ca523e7313cf4ba0f6ea830b6281], UserHandle{0})
+08-30 22:21:40.469: I/Telecom(1640): Event: Call 3: BIND_CS, ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}
+08-30 22:21:40.483: I/Telecom(1640): Call: CallerInfo received for tel:***********: com.android.internal.telephony.CallerInfo@7a09a23 { name null, phoneNumber non-null }
+08-30 22:21:40.520: W/GCM(1933): ACTIVE NETWORK NOT CONNECTED
+08-30 22:21:40.525: I/iu.Environment(2433): update connectivity state; isNetworkMetered? true, isRoaming? false, isBackgroundDataAllowed? false*
+08-30 22:21:40.528: D/ConnectivityService(1640): reportNetworkConnectivity(100, false) by 10008
+08-30 22:21:40.528: D/NetworkMonitor/NetworkAgentInfo [MOBILE (LTE) - 100](1640): Forcing reevaluation for UID 10008
+08-30 22:21:40.531: I/iu.UploadsManager(2433): num queued entries: 0
+08-30 22:21:40.542: I/iu.UploadsManager(2433): num updated entries: 0
+08-30 22:21:40.550: I/iu.SyncManager(2433): NEXT; no task
+08-30 22:21:40.565: I/Telecom(1640): ServiceBinderConnection: Service bound ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}
+08-30 22:21:40.566: I/Telecom(1640): Event: Call 3: CS_BOUND, ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}
+08-30 22:21:40.566: I/Telecom(1640): Event: Call 3: START_CONNECTION, tel:***********
+08-30 22:21:40.580: I/Telecom(1640): PhoneAccountRegistrar: SimCallManager queried, returning: null
+08-30 22:21:40.580: I/Telephony(1952): TelephonyConnectionService: onCreateIncomingConnection, request: ConnectionRequest xxxxxxxxxxxxxxx Bundle[mParcelledData.dataSize=244]
+08-30 22:21:40.581: I/Telecom(1640): CallAudioManager: updateAudioStreamAndMode :  mIsRinging: false, mIsTonePlaying: false, call: [225311393, NEW, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]]
+08-30 22:21:40.963: D/NetworkMonitor/NetworkAgentInfo [MOBILE (LTE) - 100](1640): Checking http://connectivitycheck.gstatic.com/generate_204 on null, connectivitycheck.gstatic.com=74.125.136.94,2607:f8b0:4002:807::2003
+08-30 22:21:41.082: I/Telecom(1640): CallsManager: setCallState NEW -> RINGING, call: [225311393, NEW, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]]
+08-30 22:21:41.086: I/Telecom(1640): Event: Call 3: SET_RINGING, successful incoming call
+08-30 22:21:41.087: W/BroadcastQueue(1640): Permission Denial: receiving Intent { act=android.intent.action.PHONE_STATE flg=0x10 (has extras) } to ProcessRecord{5e041d6 1773:com.android.systemui/u0a15} (pid=1773, uid=10015) requires android.permission.READ_PHONE_STATE due to sender android (uid 1000)
+08-30 22:21:41.087: I/Telecom(1640): PhoneStateBroadcaster: Broadcasted state change: 1
+08-30 22:21:41.088: I/Telecom(1640): CallAudioManager: updateAudioStreamAndMode :  mIsRinging: false, mIsTonePlaying: false, call: [225311393, RINGING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]]
+08-30 22:21:41.088: I/Telecom(1640): InCallWakeLockController: Acquiring full wake lock
+08-30 22:21:41.089: I/Telecom(1640): InCallController: Found default-dialer's In-Call UI: ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}
+08-30 22:21:41.089: I/Telecom(1640): InCallController: Attempting to bind to [def-dialer] InCall ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}, with Intent { act=android.telecom.InCallService cmp=com.android.dialer/com.android.incallui.InCallServiceImpl }
+08-30 22:21:41.093: I/Telecom(1640): CallAudioManager: updateAudioStreamAndMode :  mIsRinging: false, mIsTonePlaying: false, call: [225311393, RINGING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]]
+08-30 22:21:41.094: I/Telecom(1640): Event: Call 3: START_RINGER, null
+08-30 22:21:41.094: I/Telecom(1640): CallAudioManager: setIsRinging false -> true (call = [225311393, RINGING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]])
+08-30 22:21:41.094: I/Telecom(1640): CallAudioManager: updateAudioStreamAndMode :  mIsRinging: true, mIsTonePlaying: false, call: [225311393, RINGING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]]
+08-30 22:21:41.095: I/Telecom(1640): CallAudioManager: updateAudioStreamAndMode : ringing
+08-30 22:21:41.095: I/Telecom(1640): CallAudioManager: requestAudioFocusAndSetMode : requesting stream: STEAM_NONE -> STREAM_RING
+08-30 22:21:41.096: I/InCall(28140): ProximitySensor - ProximitySensor{keybrd=0, dpad=0, offhook=0, hor=0, ui=0, aud=EARPIECE}
+08-30 22:21:41.096: I/InCall(28140): ProximitySensor - Proximity wake lock already released
+08-30 22:21:41.096: I/Telecom(1640): AsyncRingtonePlayer: Play ringtone.
+08-30 22:21:41.097: I/InCall(28140): InCallPresenter - Phone switching state: NO_CALLS -> NO_CALLS
+08-30 22:21:41.101: D/GpsNetInitiatedHandler(1640): onCallStateChanged(): state is 1
+08-30 22:21:41.101: I/MediaFocusControl(1640):  AudioFocus  requestAudioFocus() from AudioFocus_For_Phone_Ring_And_Calls req=2flags=0x4
+08-30 22:21:41.118: I/Telecom(1640): InCallController: onConnected to ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}
+08-30 22:21:41.119: I/Telecom(1640): InCallController: Adding 1 calls to InCallService after onConnected: ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}
+08-30 22:21:41.128: I/Telecom(1640): InCallController: Calling onAudioStateChanged, audioState: null -> [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER]
+08-30 22:21:41.128: I/Telecom(1640): InCallController: onCanAddCallChanged : true
+08-30 22:21:41.132: I/InCall(28140): CallList - onIncoming - [Call_1, INCOMING, [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_RESPOND_VIA_TEXT CAPABILITY_MUTE], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+08-30 22:21:41.132: I/InCall(28140): InCallPresenter - Start Full Screen in call UI
+08-30 22:21:41.132: D/CallerInfoUtils(28140): modifyForSpecialCnapCases: initially, number=xxxxxxxxxxx, presentation=1 ci com.android.incallui.CallerInfo@ce75ccd { name null, phoneNumber null }
+08-30 22:21:41.133: D/CallerInfoUtils(28140): SpecialCnap: number=xxxxxxxxxxx; presentation now=1
+08-30 22:21:41.133: D/CallerInfoUtils(28140): modifyForSpecialCnapCases: returning number string=xxxxxxxxxxx
+08-30 22:21:41.177: D/CallerInfoUtils(28140): ==> Actually starting CallerInfoAsyncQuery.startQuery()...
+08-30 22:21:41.196: E/WVMExtractor(28270): Failed to open libwvm.so: dlopen failed: library "libwvm.so" not found
+08-30 22:21:41.197: I/InCall(28140): StatusBarNotifier - Previous notification already showing - cancelling 0
+08-30 22:21:41.198: I/InCall(28140): StatusBarNotifier - Displaying notification for 2
+08-30 22:21:41.211: D/NuPlayerDriver(28270): notifyListener_l(0xf61da080), (1, 0, 0)
+08-30 22:21:41.211: I/InCall(28140): InCallPresenter - Phone switching state: NO_CALLS -> INCOMING
+08-30 22:21:41.212: D/MediaPlayer(1640): setSubtitleAnchor in MediaPlayer
+08-30 22:21:41.213: I/InCall(28140): InCallPresenter - setBoundAndWaitingForOutgoingCall: false
+08-30 22:21:41.215: D/Ringtone(1640): Successfully created local player
+08-30 22:21:41.215: D/NuPlayerDriver(28270): reset(0xf61da080)
+08-30 22:21:41.215: D/NuPlayerDriver(28270): notifyListener_l(0xf61da080), (8, 0, 0)
+08-30 22:21:41.216: D/NuPlayerDriver(28270): notifyResetComplete(0xf61da080)
+08-30 22:21:41.216: D/NuPlayerDriver(28270): reset(0xf61da080)
+08-30 22:21:41.249: D/NuPlayerDriver(28270): notifyListener_l(0xf48a2060), (1, 0, 0)
+08-30 22:21:41.250: D/MediaPlayer(1640): setSubtitleAnchor in MediaPlayer
+08-30 22:21:41.253: D/Ringtone(1640): Successfully created local player
+08-30 22:21:41.254: D/NuPlayerDriver(28270): start(0xf48a2060), state is 4, eos is 0
+08-30 22:21:41.254: I/GenericSource(28270): start
+08-30 22:21:41.255: I/Telecom(1640): AsyncRingtonePlayer: Repeat ringtone.
+08-30 22:21:41.281: D/PhoneStatusBar(1773): disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock search quick_settings >
+08-30 22:21:41.365: D/NetworkMonitor/NetworkAgentInfo [MOBILE (LTE) - 100](1640): isCaptivePortal: ret=204 headers={null=[HTTP/1.1 204 No Content], Content-Length=[0], Date=[Thu, 31 Aug 2017 01:21:42 GMT], X-Android-Received-Millis=[1504142501365], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1504142501007]}
+08-30 22:21:41.366: D/ConnectivityService(1640): setProvNotificationVisibleIntent null visible=false networkType=MOBILE extraInfo=null highPriority=false
+08-30 22:21:41.366: D/ConnectivityService(1640): NetworkAgentInfo [MOBILE (LTE) - 100] validation  passed
+08-30 22:21:41.438: D/EGL_emulation(1773): eglMakeCurrent: 0x7f0dd92e5560: ver 2 0 (tinfo 0x7f0dd92c2340)
+08-30 22:21:41.451: E/Surface(1773): getSlotFromBufferLocked: unknown buffer: 0x7f0dca1f88c0
+08-30 22:21:41.540: D/EGL_emulation(1773): eglMakeCurrent: 0x7f0dd92e5560: ver 2 0 (tinfo 0x7f0dd92c2340)
+08-30 22:21:41.585: W/OMXNodeInstance(28270): [f:google.mpeg2.decoder] component does not support metadata mode; using fallback
+08-30 22:21:41.595: W/OMXNodeInstance(28270): [10:google.mpeg4.decoder] component does not support metadata mode; using fallback
+08-30 22:21:41.600: W/OMXNodeInstance(28270): [11:google.h263.decoder] component does not support metadata mode; using fallback
+08-30 22:21:41.622: D/SoftAVCDec(28270): Number of CPU cores: 2
+08-30 22:21:41.633: W/OMXNodeInstance(28270): [12:google.h264.decoder] component does not support metadata mode; using fallback
+08-30 22:21:41.634: D/SoftAVCDec(28270): Number of CPU cores: 2
+08-30 22:21:41.641: D/SoftHEVC(28270): Number of CPU cores: 2
+08-30 22:21:41.654: D/SoftHEVC(28270): Initializing decoder
+08-30 22:21:41.656: D/SoftHEVC(28270): Set number of cores to 2
+08-30 22:21:41.656: D/SoftHEVC(28270): Ittiam decoder version number: @(#)Id:HEVCDEC_production Ver:04.04 Released by ITTIAM Build: Jul 12 2017 @ 19:54:28
+08-30 22:21:41.657: W/OMXNodeInstance(28270): [13:google.hevc.decoder] component does not support metadata mode; using fallback
+08-30 22:21:41.657: D/SoftHEVC(28270): Freeing codec memory
+08-30 22:21:41.657: D/SoftHEVC(28270): Number of CPU cores: 2
+08-30 22:21:41.657: D/SoftHEVC(28270): Initializing decoder
+08-30 22:21:41.657: D/SoftHEVC(28270): Set number of cores to 2
+08-30 22:21:41.657: D/SoftHEVC(28270): Ittiam decoder version number: @(#)Id:HEVCDEC_production Ver:04.04 Released by ITTIAM Build: Jul 12 2017 @ 19:54:28
+08-30 22:21:41.660: D/SoftHEVC(28270): In SoftHEVC::~SoftHEVC
+08-30 22:21:41.660: D/SoftHEVC(28270): Freeing codec memory
+08-30 22:21:41.680: W/OMXNodeInstance(28270): [14:google.vp8.decoder] component does not support metadata mode; using fallback
+08-30 22:21:41.682: W/OMXNodeInstance(28270): [15:google.vp9.decoder] component does not support metadata mode; using fallback
+08-30 22:21:41.690: I/SoftMPEG4Encoder(28270): Construct SoftMPEG4Encoder
+08-30 22:21:41.690: W/ACodec(28270): do not know color format 0x7f000789 = 2130708361
+08-30 22:21:41.727: W/ACodec(28270): do not know color format 0x7f000789 = 2130708361
+08-30 22:21:41.732: I/SoftMPEG4Encoder(28270): Construct SoftMPEG4Encoder
+08-30 22:21:41.732: W/ACodec(28270): do not know color format 0x7f000789 = 2130708361
+08-30 22:21:41.745: W/ACodec(28270): do not know color format 0x7f000789 = 2130708361
+08-30 22:21:41.803: W/MediaCodecList(28270): unable to open media codecs configuration xml file: /data/misc/media/media_codecs_profiling_results.xml
+08-30 22:21:41.839: E/OMXNodeInstance(28270): setConfig(1a:google.vorbis.decoder, ConfigPriority(0x6f800002)) ERROR: Undefined(0x80001001)
+08-30 22:21:41.839: I/ACodec(28270): codec does not support config priority (err -2147483648)
+08-30 22:21:41.840: I/MediaCodec(28270): MediaCodec will operate in async mode
+08-30 22:21:41.855: D/NuPlayerDriver(28270): notifyListener_l(0xf48a2060), (6, 0, 0)
+08-30 22:21:44.648: I/NuPlayerDecoder(28270): [audio] saw output EOS
+08-30 22:21:45.143: D/NuPlayerDriver(28270): notifyListener_l(0xf48a2060), (2, 0, 0)
+08-30 22:21:45.146: I/NuPlayerDecoder(28270): [OMX.google.vorbis.decoder] resubmitting CSD
+08-30 22:21:45.146: I/NuPlayerDecoder(28270): [OMX.google.vorbis.decoder] resubmitting CSD
+08-30 22:21:45.149: D/NuPlayerDriver(28270): notifyListener_l(0xf48a2060), (6, 0, 0)
+08-30 22:21:46.767: D/AudioFlinger(28270): mixer(0xf43c0000) throttle end: throttle time(2)
+08-30 22:21:46.857: D/AudioFlinger(28270): mixer(0xf43c0000) throttle end: throttle time(5)
+08-30 22:21:47.860: I/NuPlayerDecoder(28270): [audio] saw output EOS
+08-30 22:21:48.255: D/NuPlayerDriver(28270): notifyListener_l(0xf48a2060), (2, 0, 0)
+08-30 22:21:48.270: I/NuPlayerDecoder(28270): [OMX.google.vorbis.decoder] resubmitting CSD
+08-30 22:21:48.271: I/NuPlayerDecoder(28270): [OMX.google.vorbis.decoder] resubmitting CSD
+08-30 22:21:48.273: D/NuPlayerDriver(28270): notifyListener_l(0xf48a2060), (6, 0, 0)
+08-30 22:21:50.934: I/NuPlayerDecoder(28270): [audio] saw output EOS
+08-30 22:21:51.357: D/NuPlayerDriver(28270): notifyListener_l(0xf48a2060), (2, 0, 0)
+08-30 22:21:51.360: I/NuPlayerDecoder(28270): [OMX.google.vorbis.decoder] resubmitting CSD
+08-30 22:21:51.361: I/NuPlayerDecoder(28270): [OMX.google.vorbis.decoder] resubmitting CSD
+08-30 22:21:51.364: D/NuPlayerDriver(28270): notifyListener_l(0xf48a2060), (6, 0, 0)
+08-30 22:21:51.771: D/AudioFlinger(28270): mixer(0xf43c0000) throttle end: throttle time(3)
+08-30 22:21:53.796: D/StatusBar(1773): Clicked on button 0 for 0|com.android.dialer|2|null|10005
+08-30 22:21:53.798: I/InCall(28140): NotificationBroadcastReceiver - Broadcast from Notification: com.android.incallui.ACTION_DECLINE_INCOMING_CALL
+08-30 22:21:53.801: I/Telecom(1640): Event: Call 3: STOP_RINGER, No more ringing calls found
+08-30 22:21:53.801: I/Telecom(1640): CallAudioManager: setIsRinging true -> false (call = [225311393, RINGING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]])
+08-30 22:21:53.801: I/Telecom(1640): CallAudioManager: updateAudioStreamAndMode :  mIsRinging: false, mIsTonePlaying: false, call: [225311393, RINGING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]]
+08-30 22:21:53.801: I/Telecom(1640): Event: Call 3: REQUEST_REJECT, null
+08-30 22:21:53.802: I/Telecom(1640): AsyncRingtonePlayer: Stop ringtone.
+08-30 22:21:53.808: I/Telecom(1640): InCallController: Sending updateCall [225311393, RINGING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]] ==> [InCall@4, parent:null, children:[]]
+08-30 22:21:53.809: I/Telecom(1640): InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]
+08-30 22:21:53.811: D/NuPlayerDriver(28270): reset(0xf48a2060)
+08-30 22:21:53.811: D/NuPlayerDriver(28270): notifyListener_l(0xf48a2060), (8, 0, 0)
+08-30 22:21:53.813: W/AMessage(28270): failed to post message as target looper for handler 0 is gone.
+08-30 22:21:53.813: D/NuPlayerDriver(28270): notifyResetComplete(0xf48a2060)
+08-30 22:21:53.814: D/NuPlayerDriver(28270): reset(0xf48a2060)
+08-30 22:21:53.828: D/ConnectivityService(1640): NetworkAgentInfo [MOBILE (LTE) - 100] EVENT_NETWORK_INFO_CHANGED, going from SUSPENDED to CONNECTED
+08-30 22:21:53.828: D/ConnectivityService(1640): notifyType UNKNOWN for NetworkAgentInfo [MOBILE (LTE) - 100]
+08-30 22:21:53.829: D/ConnectivityManager.CallbackHandler(1773): CM callback handler got msg 524300
+08-30 22:21:53.830: D/CSLegacyTypeTracker(1640): Sending CONNECTED broadcast for type 0 NetworkAgentInfo [MOBILE (LTE) - 100] isDefaultNetwork=true
+08-30 22:21:53.830: D/ConnectivityService(1640): sendStickyBroadcast: action=android.net.conn.CONNECTIVITY_CHANGE
+08-30 22:21:53.833: D/Tethering(1640): MasterInitialState.processMessage what=3
+08-30 22:21:53.838: D/ConnectivityManager.CallbackHandler(2433): CM callback handler got msg 524300
+08-30 22:21:53.852: D/NetworkChangeNotifierAutoDetect(2180): Network connectivity changed, type is: 5
+08-30 22:21:53.865: I/Telecom(1640): InCallController: Sending updateCall [225311393, RINGING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]] ==> [InCall@4, parent:null, children:[]]
+08-30 22:21:53.867: I/Telecom(1640): InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]
+08-30 22:21:53.878: I/Telecom(1640): InCallController: Sending updateCall [225311393, RINGING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]] ==> [InCall@4, parent:null, children:[]]
+08-30 22:21:53.878: I/Telecom(1640): InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]
+08-30 22:21:53.901: I/Telecom(1640): InCallController: Sending updateCall [225311393, RINGING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]] ==> [InCall@4, parent:null, children:[]]
+08-30 22:21:53.902: I/Telecom(1640): InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]
+08-30 22:21:53.903: I/Telecom(1640): CallsManager: setCallState RINGING -> DISCONNECTED, call: [225311393, RINGING, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]]
+08-30 22:21:53.903: I/Telecom(1640): Event: Call 3: SET_DISCONNECTED, disconnected set explicitly> DisconnectCause [ Code: (REJECTED) Label: () Description: () Reason: (INCOMING_REJECTED) Tone: (-1) ]
+08-30 22:21:53.903: I/Telecom(1640): CallAudioManager: updateAudioStreamAndMode :  mIsRinging: false, mIsTonePlaying: false, call: [225311393, DISCONNECTED, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]]
+08-30 22:21:53.903: I/Telecom(1640): CallAudioManager: requestAudioFocusAndSetMode : requesting stream: STREAM_RING -> STREAM_VOICE_CALL
+08-30 22:21:53.903: I/MediaFocusControl(1640):  AudioFocus  requestAudioFocus() from AudioFocus_For_Phone_Ring_And_Calls req=2flags=0x4
+08-30 22:21:53.905: I/Telecom(1640): CallAudioManager: setInitialAudioState : audioState = [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER], call = [225311393, DISCONNECTED, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]]
+08-30 22:21:53.905: I/Telecom(1640): CallAudioManager: setSystemAudioState: changing from [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER] to [AudioState isMuted: false, route: EARPIECE, supportedRouteMask: EARPIECE, SPEAKER]
+08-30 22:21:53.905: I/Telecom(1640): Event: Call 3: AUDIO_ROUTE, EARPIECE
+08-30 22:21:53.932: W/ContextImpl(1640): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:778 android.content.ContextWrapper.sendBroadcast:401 com.android.server.telecom.CallLogManager.sendAddCallBroadcast:297 com.android.server.telecom.CallLogManager.logCall:187 com.android.server.telecom.CallLogManager.logCall:150 
+08-30 22:21:53.933: I/Telecom(1640): InCallWakeLockController: Releasing full wake lock
+08-30 22:21:53.939: I/Telecom(1640): InCallController: Sending updateCall [225311393, DISCONNECTED, com.android.phone/com.android.services.telephony.TelephonyConnectionService, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]] ==> [InCall@4, parent:null, children:[]]
+08-30 22:21:53.939: I/Telecom(1640): InCallController: Components updated: [ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}]
+08-30 22:21:53.939: I/Telecom(1640): CallAudioManager: updateAudioStreamAndMode :  mIsRinging: false, mIsTonePlaying: false, call: null
+08-30 22:21:53.941: I/Telecom(1640): ConnectionServiceWrapper: Service unbound ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, from unbind.
+08-30 22:21:53.941: I/InCall(28140): CallList - onDisconnect: [Call_1, DISCONNECTED, [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+08-30 22:21:53.941: I/InCall(28140): InCallPresenter - Phone switching state: INCOMING -> INCALL
+08-30 22:21:53.955: I/InCall(28140): CallList - onUpdate - [Call_1, DISCONNECTED, [Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE], children:[], parent:null, conferenceable:[], videoState:Audio Only, mSessionModificationState:0, VideoSettings:(CameraDir:-1)]
+08-30 22:21:53.955: I/InCall(28140): InCallPresenter - Phone switching state: INCALL -> INCALL
+08-30 22:21:53.956: W/InCall(28140): CallList - Removing call not previously disconnected Call_1
+08-30 22:21:53.956: I/InCall(28140): InCallPresenter - Hide in call UI: false
+08-30 22:21:53.956: I/InCall(28140): InCallPresenter - attemptCleanup? false
+08-30 22:21:53.956: I/InCall(28140): InCallPresenter - Phone switching state: INCALL -> NO_CALLS
+08-30 22:21:53.956: I/InCall(28140): InCallPresenter - Phone switching state: NO_CALLS -> NO_CALLS
+08-30 22:21:53.957: I/InCall(28140): InCallPresenter - Phone switching state: NO_CALLS -> NO_CALLS
+08-30 22:21:53.964: I/Telecom(1640): Event: Call 3: DESTROYED, null
+08-30 22:21:53.965: I/Telecom(1640): ProximitySensorManager: All calls removed, resetting proximity sensor to default state
+08-30 22:21:53.965: I/Telecom(1640): ProximitySensorManager: Proximity wake lock already released
+08-30 22:21:53.966: W/BroadcastQueue(1640): Permission Denial: receiving Intent { act=android.intent.action.PHONE_STATE flg=0x10 (has extras) } to ProcessRecord{5e041d6 1773:com.android.systemui/u0a15} (pid=1773, uid=10015) requires android.permission.READ_PHONE_STATE due to sender android (uid 1000)
+08-30 22:21:53.967: I/Telecom(1640): PhoneStateBroadcaster: Broadcasted state change: 0
+08-30 22:21:53.967: I/Telecom(1640): InCallController: onCallRemoved: [225311393, DISCONNECTED, null, tel:***********, A, childs(0), has_parent(false), [[Capabilities: CAPABILITY_SUPPORT_HOLD CAPABILITY_MUTE]]]
+08-30 22:21:54.061: W/art(1640): Long monitor contention event with owner method=void com.android.server.net.NetworkPolicyManagerService$14.onReceive(android.content.Context, android.content.Intent) from NetworkPolicyManagerService.java:1056 waiters=0 for 226ms
+08-30 22:21:54.102: W/audio_hw_generic(28270): Not supplying enough data to HAL, expected position 1357261 , only wrote 1357033
+08-30 22:21:54.110: D/ConnectivityService(1640): reportNetworkConnectivity(100, false) by 10008
+08-30 22:21:54.110: D/NetworkMonitor/NetworkAgentInfo [MOBILE (LTE) - 100](1640): Forcing reevaluation for UID 10008
+08-30 22:21:54.122: W/audio_hw_generic(28270): Not supplying enough data to HAL, expected position 1357907 , only wrote 1357694
+08-30 22:21:54.123: D/NetworkMonitor/NetworkAgentInfo [MOBILE (LTE) - 100](1640): Checking http://connectivitycheck.gstatic.com/generate_204 on null, connectivitycheck.gstatic.com=74.125.136.94,2607:f8b0:4002:807::2003
+08-30 22:21:54.132: I/iu.Environment(2433): update connectivity state; isNetworkMetered? true, isRoaming? false, isBackgroundDataAllowed? true*
+08-30 22:21:54.137: I/iu.UploadsManager(2433): num queued entries: 0
+08-30 22:21:54.139: I/iu.UploadsManager(2433): num updated entries: 0
+08-30 22:21:54.140: I/iu.SyncManager(2433): NEXT; no task
+08-30 22:21:54.191: I/MediaFocusControl(1640):  AudioFocus  abandonAudioFocus() from AudioFocus_For_Phone_Ring_And_Calls
+08-30 22:21:54.192: D/GpsNetInitiatedHandler(1640): onCallStateChanged(): state is 0
+08-30 22:21:54.297: D/NetworkMonitor/NetworkAgentInfo [MOBILE (LTE) - 100](1640): isCaptivePortal: ret=204 headers={null=[HTTP/1.1 204 No Content], Content-Length=[0], Date=[Thu, 31 Aug 2017 01:21:55 GMT], X-Android-Received-Millis=[1504142514296], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1504142514124]}
+08-30 22:21:54.297: D/ConnectivityService(1640): setProvNotificationVisibleIntent null visible=false networkType=MOBILE extraInfo=null highPriority=false
+08-30 22:21:54.297: D/ConnectivityService(1640): NetworkAgentInfo [MOBILE (LTE) - 100] validation  passed
+08-30 22:21:54.630: W/audio_hw_generic(28270): Not supplying enough data to HAL, expected position 1380083 , only wrote 1377524
+08-30 22:21:55.396: D/PhoneStatusBar(1773): disable: < expand icons* alerts system_info* back home recent clock search quick_settings >
+08-30 22:21:55.426: D/StrictMode(1933): Wrote violation #0 of 5: 11524 bytes
+08-30 22:21:55.426: D/StrictMode(1933): Wrote violation #1 of 5: 12200 bytes
+08-30 22:21:55.426: D/StrictMode(1933): Wrote violation #2 of 5: 12200 bytes
+08-30 22:21:55.426: D/StrictMode(1933): Wrote violation #3 of 5: 12200 bytes
+08-30 22:21:55.426: D/StrictMode(1933): Wrote violation #4 of 5: 12200 bytes
+08-30 22:21:55.428: D/StrictMode(2586): Wrote violation #0 of 5: 12728 bytes
+08-30 22:21:55.428: D/StrictMode(2586): Wrote violation #1 of 5: 13404 bytes
+08-30 22:21:55.428: D/StrictMode(2586): Wrote violation #2 of 5: 13404 bytes
+08-30 22:21:55.428: D/StrictMode(2586): Wrote violation #3 of 5: 13404 bytes
+08-30 22:21:55.428: D/StrictMode(2586): Wrote violation #4 of 5: 13404 bytes
+08-30 22:21:55.444: D/WVCdm(28270): Instantiating CDM.
+08-30 22:21:55.477: W/audio_hw_generic(28270): Not supplying enough data to HAL, expected position 1414893 , only wrote 1414540
+08-30 22:21:55.477: W/audio_hw_generic(28270): Not supplying enough data to HAL, expected position 1414545 , only wrote 1414540
+08-30 22:21:55.497: W/audio_hw_generic(28270): Not supplying enough data to HAL, expected position 1415411 , only wrote 1415201
+08-30 22:21:55.514: I/WVCdm(28270): CdmEngine::OpenSession
+08-30 22:21:55.514: I/WVCdm(28270): Level3 Library Sep 28 2015 13:08:28
+08-30 22:21:55.522: I/AccountManagerService(1640): getTypesVisibleToCaller: isPermitted? true
+08-30 22:21:55.522: W/WVCdm(28270): Could not read /data/mediadrm/IDM1013/ay64.dat2: No such file or directory
+08-30 22:21:55.522: W/WVCdm(28270): Could not load liboemcrypto.so. Falling back to L3.  dlopen failed: library "liboemcrypto.so" not found
+08-30 22:21:55.525: I/WVCdm(28270): CdmEngine::QueryKeyControlInfo
+08-30 22:21:55.526: W/WVCdm(28270): BufferReader::Read<T> : Failure during parse: Not enough bytes (4)
+08-30 22:21:55.526: W/WVCdm(28270): CdmEngine::ExtractWidevinePssh: Unable to read atom size.
+08-30 22:21:55.526: I/WVCdm(28270): CdmEngine::GenerateKeyRequest
+08-30 22:21:55.527: D/WVCdm(28270): PrepareKeyRequest: nonce=2313161639
+08-30 22:21:55.735: I/WVCdm(28270): CdmEngine::CloseSession
+08-30 22:21:55.783: W/audio_hw_generic(28270): Not supplying enough data to HAL, expected position 1427823 , only wrote 1427760
+08-30 22:21:55.818: D/EGL_emulation(1773): eglMakeCurrent: 0x7f0dd92e5560: ver 2 0 (tinfo 0x7f0dd92c2340)
+08-30 22:21:55.826: E/Surface(1773): getSlotFromBufferLocked: unknown buffer: 0x7f0dca1f88c0
+08-30 22:21:55.952: D/EGL_emulation(1773): eglMakeCurrent: 0x7f0dd92e5560: ver 2 0 (tinfo 0x7f0dd92c2340)
+08-30 22:21:55.967: I/Choreographer(1773): Skipped 32 frames!  The application may be doing too much work on its main thread.
+08-30 22:21:55.970: I/Telecom(1640): InCallController: Unbinding from InCallService ComponentInfo{com.android.dialer/com.android.incallui.InCallServiceImpl}
+08-30 22:21:55.972: I/InCall(28140): InCallPresenter - setBoundAndWaitingForOutgoingCall: false
+08-30 22:21:55.972: I/InCall(28140): InCallPresenter - Phone switching state: NO_CALLS -> NO_CALLS
+08-30 22:21:55.972: I/InCall(28140): InCallPresenter - attemptCleanup? true
+08-30 22:21:55.972: D/AccelerometerListener(28140): enable(false)
+08-30 22:21:55.972: I/InCall(28140): ProximitySensor - Proximity wake lock already released
+08-30 22:21:56.938: W/audio_hw_generic(28270): Not supplying enough data to HAL, expected position 1528294 , only wrote 1478657
+08-30 22:21:56.957: W/Binder_3(2653): type=1400 audit(0.0:31): avc: denied { search } for name="1325" dev="proc" ino=4377 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:zygote:s0 tclass=dir permissive=0
+08-30 22:21:56.976: D/EGL_emulation(2586): eglCreateContext: 0x7f0dc5abb2c0: maj 2 min 0 rcv 2
+08-30 22:21:56.977: D/EGL_emulation(2586): eglMakeCurrent: 0x7f0dc5abb2c0: ver 2 0 (tinfo 0x7f0dc5f3fba0)
+08-30 22:21:57.154: D/EGL_emulation(2586): eglCreateContext: 0x7f0dc5abb2c0: maj 2 min 0 rcv 2
+08-30 22:21:57.155: D/EGL_emulation(2586): eglMakeCurrent: 0x7f0dc5abb2c0: ver 2 0 (tinfo 0x7f0dc5f3fba0)
+08-30 22:21:57.477: W/Binder_3(2653): type=1400 audit(0.0:32): avc: denied { read } for name="/" dev="tmpfs" ino=3930 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=0
+08-30 22:21:58.108: W/Conscrypt(1933): Could not set socket write timeout:
+08-30 22:21:58.109: W/Conscrypt(1933):    java.lang.reflect.Method.invoke(Native Method)
+08-30 22:21:58.109: W/Conscrypt(1933):    wrp.a(:com.google.android.gms:58)
+08-30 22:21:58.457: W/Conscrypt(1933): Could not set socket write timeout:
+08-30 22:21:58.458: W/Conscrypt(1933):    java.lang.reflect.Method.invoke(Native Method)
+08-30 22:21:58.458: W/Conscrypt(1933):    wrp.a(:com.google.android.gms:58)
+08-30 22:21:58.818: W/GLSUser(1933): [AppCertManager] IOException while requesting key: 
+08-30 22:21:58.818: W/GLSUser(1933): java.io.IOException: Invalid device key response.
+08-30 22:21:58.818: W/GLSUser(1933): 	at etg.a(:com.google.android.gms:10)
+08-30 22:21:58.818: W/GLSUser(1933): 	at etg.a(:com.google.android.gms:69)
+08-30 22:21:58.818: W/GLSUser(1933): 	at ete.a(:com.google.android.gms:11)
+08-30 22:21:58.818: W/GLSUser(1933): 	at eta.a(:com.google.android.gms:0)
+08-30 22:21:58.818: W/GLSUser(1933): 	at esz.a(:com.google.android.gms:9)
+08-30 22:21:58.818: W/GLSUser(1933): 	at com.google.android.gms.auth.account.be.legacy.AuthCronChimeraService.b(:com.google.android.gms:8)
+08-30 22:21:58.818: W/GLSUser(1933): 	at eca.call(:com.google.android.gms:2)
+08-30 22:21:58.818: W/GLSUser(1933): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+08-30 22:21:58.818: W/GLSUser(1933): 	at lhb.run(:com.google.android.gms:24)
+08-30 22:21:58.818: W/GLSUser(1933): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+08-30 22:21:58.818: W/GLSUser(1933): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+08-30 22:21:58.818: W/GLSUser(1933): 	at lmc.run(:com.google.android.gms:0)
+08-30 22:21:58.818: W/GLSUser(1933): 	at java.lang.Thread.run(Thread.java:818)
+08-30 22:22:00.125: D/hwcomposer(1229): hw_composer sent 190 syncs in 60s
